@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portmanteaux</title>
+    <link rel="stylesheet" href="portmanteaux.css">
+  </head>
+  <body>
+    <h1>All Users</h1>
+        
+    <button id="getWords">Get Users</button>
+    <div>
+    <ul id="wordList">
+    </ul>
+    </div>
+    <div>
+      <h1>Enter User :</h1>
+      <form name="dartform" id="dartform" method="POST" action="http://127.0.0.1:1212/insertdartmongouser">
+        Name : <input type="text" name ="username" id="usernameid" value="" />
+        Password  : <input type="text" name ="password" id="passwordid" value="" />
+        Email  : <input type="text" name ="email" id="emailid" value="" />
+        <button id="saveUser" >Save</button>
+      </form>
+    </div>
+    <script type="application/dart" src="portmanteaux.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+    </body>
+</html>
